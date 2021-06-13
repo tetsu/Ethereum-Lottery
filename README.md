@@ -1,1 +1,3 @@
-# Etereum-Lottery
+# Ethereum-Lottery
+
+Lottery app using Ethereum
