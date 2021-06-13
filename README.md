@@ -1,1 +1,1 @@
-# NFT-Lottery
+# Etereum-Lottery
