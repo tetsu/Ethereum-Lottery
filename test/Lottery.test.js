@@ -53,10 +53,20 @@ describe('Lottery Contract', () => {
         from: accounts[0],
         value: 10
       });
-      assert(false);
+      assert(false);//test fails if there is no error
     } catch (err){
       assert.ok(err);//check if there is an error message
     }
-    
+  });
+
+  it('only manager can call pickWinner', async () => {
+    try {
+      await lottery.methods.pickWinnder().send({
+        from: account[1]
+      });
+      assert(false);
+    } catch (err) {
+      assert(err);
+    }
   });
 });
